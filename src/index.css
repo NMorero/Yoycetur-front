@@ -1,0 +1,14 @@
+header{
+    height: 100px;
+    background-color: #00567d;
+    padding: 1%;
+}
+
+header img{
+    height: 100%;
+    cursor: pointer;
+}
+
+body{
+    overflow-x: hidden;
+}
