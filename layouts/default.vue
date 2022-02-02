@@ -1,25 +1,39 @@
 <template>
     <div>
-        <header id="header" class=" row align-middle text-center text-lg-left py-xl-4 py-lg-3 py-md-3 py-4">
-            <Nuxt-link to="/" class=" align-middle"><img src="~/assets/logo_banner.png" alt="" class="col-lg-4 col-xl-2 col-md-6 col-7 m-auto"></Nuxt-link>
+        <header id="header" class=" row align-middle text-center text-lg-left pl-xl-3  ">
+            <Nuxt-link to="/" class=" align-middle"><img src="~/assets/logo_banner.png" alt="" class="col-lg-5 col-xl-3 col-md-6 col-10 pt-3 m-auto text-center align-middle"></Nuxt-link>
         </header>
         <Nuxt/>
         <footer id="footer">
 
         </footer>
-        <a href="https://api.whatsapp.com/send?phone=+5492213521200" target="_blank" rel="noopener noreferrer"><font-awesome-icon :icon="['fab', 'whatsapp']" class="icon shadow" /></a>
+        <a v-if="!logedIn" href="https://api.whatsapp.com/send?phone=+5492213521200" target="_blank" rel="noopener noreferrer"><font-awesome-icon :icon="['fab', 'whatsapp']" class="icon shadow" /></a>
     </div>
 </template>
 
+<script>
+export default {
+    data(){
+        return {
+            logedIn: false
+        }
+    },
+    mounted(){
+        const cookieRes = this.$cookies.get('logedIn');
+        if(cookieRes !== true){
+            this.logedIn = true;
+        }
+    }
+}
+</script>
 <style>
     #header{
-        height: 10vh;
-        padding: 1%;
         max-height: 100px;
         background-color: #00567d;
     }
     #header img{
-        height: 100%;
+        height: 80%;
+        width: auto;
     }
     #footer{
         height: 10vh;
@@ -63,12 +77,20 @@
         }
         #header img{
             height: 80%;
+            width: auto ;
         }
     }
 
-    @media only screen and (max-width: 991px) {
+    @media only landscape and (max-width: 800px) {
         #header img{
-            height: 100%;
+            height: 50%;
+            width: auto ;
+        }
+    }
+
+    @media only screen and (max-width: 991px) and (min-width: 601px){
+        #header img{
+            height: 80%;
         }
     }
 </style>

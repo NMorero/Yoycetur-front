@@ -12,10 +12,10 @@
         </div>
         <div class="col-lg-8 col-xl-8 col-8 text-left row ">
           <p  class="col-12 title">Formas de pago</p>
-          <img class="col-lg-3 col-xl-2 col-4" alt="Icono de dinero en efectivo" src="https://www.turismozeta.com.ar/assets/templates/template_six/icons/credit-card/wallet-e87ba79b9e967c3a91d2983d045c9f08f296afbda0bf2ecd979c60bf70b236a0.svg">
-          <img class="col-lg-3 col-xl-2 col-4" alt="Icono tarjeta de credito mastercard" src="https://www.turismozeta.com.ar/assets/templates/template_six/icons/credit-card/mastercard-381a3455124485c692c0371db6a6df553f7eb74b86ec5cab6a38099700f469ee.svg">
-          <img class="col-lg-3 col-xl-2 col-4" alt="Icono tarjeta de credito visa" src="https://www.turismozeta.com.ar/assets/templates/template_six/icons/credit-card/visa-8f506479c2b830ee279d75c7be6b6094f61f2062c7b17af4a207d5dfdfad39ba.svg">
-          <img class="col-lg-3 col-xl-2 col-4" alt="Icono tarjeta de mercado pago" src="https://www.turismozeta.com.ar/assets/templates/template_six/icons/credit-card/mp-4f001804ffbb209adf268df475e7235b9cf772690f2aede3e3cb5f1f77f7b235.svg">
+          <img class="col-lg-3 col-xl-2 col-sm-2 col-4" alt="Icono de dinero en efectivo" src="https://www.turismozeta.com.ar/assets/templates/template_six/icons/credit-card/wallet-e87ba79b9e967c3a91d2983d045c9f08f296afbda0bf2ecd979c60bf70b236a0.svg">
+          <img class="col-lg-3 col-xl-2 col-sm-2 col-4" alt="Icono tarjeta de credito mastercard" src="https://www.turismozeta.com.ar/assets/templates/template_six/icons/credit-card/mastercard-381a3455124485c692c0371db6a6df553f7eb74b86ec5cab6a38099700f469ee.svg">
+          <img class="col-lg-3 col-xl-2 col-sm-2 col-4" alt="Icono tarjeta de credito visa" src="https://www.turismozeta.com.ar/assets/templates/template_six/icons/credit-card/visa-8f506479c2b830ee279d75c7be6b6094f61f2062c7b17af4a207d5dfdfad39ba.svg">
+          <img class="col-lg-3 col-xl-2 col-sm-2 col-4" alt="Icono tarjeta de mercado pago" src="https://www.turismozeta.com.ar/assets/templates/template_six/icons/credit-card/mp-4f001804ffbb209adf268df475e7235b9cf772690f2aede3e3cb5f1f77f7b235.svg">
        </div>
       </div>
       <div class="col-12 text-left p-0 py-4  border-bottom">
@@ -34,9 +34,9 @@
     </div>
     
 
-      <div class="col-10 shadow align-self-start mt-5 d-lg-block d-xl-block d-md-block d-none">
-        <div class=" row justify-content-around align-middle travelContent p-3">
-        <div class="col-2 text-center align-self-center">
+      <div class="col-11 shadow align-self-start mt-5 d-lg-block d-xl-block d-md-block d-none">
+        <div class=" row justify-content-around align-middle travelContent px-1 pt-4 mb-3">
+        <div class="col-2 text-center align-self-center ">
             <font-awesome-icon :icon="['fas', 'map-marker-alt']" class="contentIcon" />
         </div>
 
@@ -45,36 +45,46 @@
         </div>
 
         <div class="col-2 text-center align-self-center">
-            <font-awesome-icon :icon="['fas', 'calendar-alt']" class="contentIcon" />
+            <font-awesome-icon :icon="['fas', 'route']" class="contentIcon" />
         </div>
 
         <div class="col-2 text-center align-self-center">
-            <font-awesome-icon :icon="['fas', 'calendar-alt']" class="contentIcon" />
+            <font-awesome-icon :icon="['fas', 'file-alt']" class="contentIcon" />
         </div>
 
         <div class="col-2 text-center align-self-center">
-            <font-awesome-icon :icon="['fas', 'calendar-alt']" class="contentIcon" />
-        </div>
-        <div class="col-2 text-center align-self-center">
-            <font-awesome-icon :icon="['fas', 'calendar-alt']" class="contentIcon" />
+            <font-awesome-icon :icon="['fas', 'bus-alt']" class="contentIcon" />
         </div>
       </div>
-      <div class=" row justify-content-around align-middle travelContent p-3">
-        <div class="col-2 text-center align-self-center">
-          <p>
-            Lugar
-          </p>
+      <div class=" row justify-content-around align-middle travelContent p-1">
+         <div class="col-2 text-center align-self-center">
+          
+          <p> San Carlos de Bariloche</p>
         </div>
 
         <div class="col-2 text-center align-self-center">
            <p>
-             Estadia
+             15 noches, 16 dias
            </p>
         </div>
 
         <div class="col-2 text-center align-self-center">
            <p>
-             Excursiones
+             Subida al cerro catedral 
+           </p>
+           <p>
+             Paseo por la ciudad
+           </p>
+        </div>
+
+        <div class="col-2 text-center align-self-center">
+           <p>
+             76457
+           </p>
+        </div>
+        <div class="col-2 text-center align-self-center">
+           <p>
+             14 de Diciembre,Buenos Aires
            </p>
         </div>
 
@@ -83,10 +93,10 @@
 
     <div class="col-10 shadow align-self-start mt-5 d-lg-none d-xl-none d-md-none d-block p-3">
       <div class="col-12 mb-1 text-center align-self-center">
-          <font-awesome-icon :icon="['fas', 'calendar-alt']" class="contentIcon" />
+          <font-awesome-icon :icon="['fas', 'map-marker-alt']" class="contentIcon" />
       </div>
       <div class="col-12 text-center align-self-center">
-          <p>Lugar</p>
+          <p>San Carlos de Bariloche</p>
       </div>
     </div>
 
@@ -95,16 +105,33 @@
           <font-awesome-icon :icon="['fas', 'calendar-alt']" class="contentIcon" />
       </div>
       <div class="col-12 text-center align-self-center">
-          <p>Estadia</p>
+          <p>15 noches, 16 dias</p>
       </div>
     </div>
 
     <div class="col-10 shadow align-self-start mt-3 d-lg-none d-xl-none d-md-none d-block p-3">
       <div class="col-12 mb-1 text-center align-self-center">
-          <font-awesome-icon :icon="['fas', 'calendar-alt']" class="contentIcon" />
+          <font-awesome-icon :icon="['fas', 'route']" class="contentIcon" />
       </div>
       <div class="col-12 text-center align-self-center">
-          <p>Excursiones</p>
+          <p>Subida cerro catedral</p>
+          <p>Paseo por la ciudad</p>
+      </div>
+    </div>
+    <div class="col-10 shadow align-self-start mt-3 d-lg-none d-xl-none d-md-none d-block p-3">
+      <div class="col-12 mb-1 text-center align-self-center">
+          <font-awesome-icon :icon="['fas', 'file-alt']" class="contentIcon" />
+      </div>
+      <div class="col-12 text-center align-self-center">
+          <p>78398</p>
+      </div>
+    </div>
+    <div class="col-10 shadow align-self-start mt-3 d-lg-none d-xl-none d-md-none d-block p-3">
+      <div class="col-12 mb-1 text-center align-self-center">
+          <font-awesome-icon :icon="['fas', 'bus-alt']" class="contentIcon" />
+      </div>
+      <div class="col-12 text-center align-self-center">
+          <p>14 de Diciembre, Buenos Aires</p>
       </div>
     </div>
 
@@ -131,7 +158,8 @@ export default{
 
 <style>
 p{
-  word-break: break-all;
+  word-break: break-word;
+
 }
   .banner{
     width: 100%;
