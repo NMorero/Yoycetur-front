@@ -6,7 +6,7 @@
                 <b-form-input  v-model="user" class="mt-3 input" :class="showErr && userEmpty ? 'err' : 'l'" placeholder="Usuario"></b-form-input>
                 <b-form-input  v-model="pass" class="mt-3 input" :class="showErr && passEmpty ? 'err' : 'l'" placeholder="Contraseña"></b-form-input>
                 <b-button class="mt-4 btnLogin" @click="submit">Iniciar sesion</b-button>
-                <span class="err" v-if="showErr">Complete los campos vacios</span>
+                <span v-if="showErr" class="err" >Complete los campos vacios</span>
             </div>
         </div>
     </div>
@@ -46,7 +46,7 @@ export default {
                 .then((res)=>{
                     if(res.status === 0){
                         this.$cookies.set('logedIn', true);
-                        this.$router.replace('/admin');
+                        this.$router.push('/')
                     }
                 })
             }
@@ -61,9 +61,7 @@ export default {
     color: rgb(241, 46, 46) !important;
     border-color: rgb(241, 46, 46) !important;
 }
-    body{
-        background-color: #00567d;
-    }
+    
     .btnLogin{
         width: 100%;
         background-color: #00567d;

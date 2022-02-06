@@ -1,11 +1,9 @@
 <template>
   <div class="row justify-content-center  mt-lg-4">
-    <video v-if="url != null"  alt="" class="banner col-lg-9 col-12" autoplay muted loop>
-      <source :src="url+'/images/banners/home.mp4'" type="video/mp4">
-    </video>
+    <img :src="url+'/images/banners/banner_home.png'" alt="">
     <div v-if="outs != null" class="row col-11 justify-content-around justify-content-center mt-5">
         <div v-for="(out, index) in outs" :key="'out'+index"  class="col-xl-3 col-lg-6 col-10 p-lg-5 p-3" >
-          <Nuxt-link :to="'/'+out.title.replace(/ /g, '-')"><img :src="url+'/images/travel_outs/'+out.image" alt="" class="outs mb-5" /></Nuxt-link>
+          <Nuxt-link :to="'/'+out.title.replace(/ /g, '-')"><img :src="url+'/images/travel_outs/image/'+out.image" alt="" class="outs mb-5" /></Nuxt-link>
         </div>
     </div>
   </div>
@@ -33,6 +31,7 @@ export default{
 
 
 <style>
+
   .banner{
     width: 100%;
   }

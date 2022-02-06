@@ -1,6 +1,6 @@
 <template>
   <div class="row justify-content-center mt-4">
-    <img :src="url+'/images/banners/'+banner" alt="" class="banner col-lg-9 col-xl-9 col-11">
+    <img :src="url+'/images/banners/bannerEj.webp'" alt="" class="banner col-lg-9 col-xl-9 col-11">
     <div class="row col-lg-11 col-xl-11 col- col-10 justify-content-around my-5 p-5">
         <Nuxt-link  v-for="(travel, index) in travels" :key="'travel'+index" :to="'/'+$route.params.out+'/'+travel.title.replaceAll(/ /g, '-')" class="travels">
           <b-card

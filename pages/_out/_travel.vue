@@ -20,7 +20,7 @@
       </div>
       <div class="col-12 text-left p-0 py-4  border-bottom">
         <p class="title">Salida</p>
-        <p class="subtitle">{{travel.departures}}</p>
+        <p class="subtitle">{{travel.departure.split(";")[0]}}</p>
       </div>
       <div class="col-12 text-left p-0 py-4   row">
         <p class="col-12 title">Incluye</p>
@@ -59,32 +59,25 @@
       <div class=" row justify-content-around align-middle travelContent p-1">
          <div class="col-2 text-center align-self-center">
           
-          <p> San Carlos de Bariloche</p>
+          <p v-for="(dest, index) in travel.destination.split(';')" :key="index+'travelDest'">{{dest}}</p>
+        </div>
+
+        <div class="col-2 text-center align-self-center">
+           <p v-for="(st, index) in travel.stay.split(';')" :key="index+'travelStay'">{{st}}</p>
+        </div>
+
+        <div class="col-2 text-center align-self-center">
+           <p v-for="(excursion, index) in travel.excursions.split(';')" :key="index+'travelExcursions'">{{excursion}}</p>
         </div>
 
         <div class="col-2 text-center align-self-center">
            <p>
-             15 noches, 16 dias
-           </p>
-        </div>
-
-        <div class="col-2 text-center align-self-center">
-           <p>
-             Subida al cerro catedral 
-           </p>
-           <p>
-             Paseo por la ciudad
-           </p>
-        </div>
-
-        <div class="col-2 text-center align-self-center">
-           <p>
-             76457
+             {{travel.file}}
            </p>
         </div>
         <div class="col-2 text-center align-self-center">
            <p>
-             14 de Diciembre,Buenos Aires
+            {{travel.departure.replace(';', ',')}}
            </p>
         </div>
 
